@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "@types/node": "^20.8.9",
+    "ts-jest": "^29.1.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "name": "@profico/profico-logger",
+  "version": "1.0.0",
+  "description": "A simple logger with Slack support",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest src/*.test.ts",
+    "build": "tsup ./src",
+    "publish": "npm publish",
+    "dry": "npm publish --dry-run",
+    "ci": "npm i && npm run build && npm run test && npm run dry && npm run publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profico/logger.git"
+  },
+  "keywords": [
+    "logger",
+    "slack"
+  ],
+  "author": "Ivan Kulis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profico/logger/issues"
+  },
+  "homepage": "https://github.com/profico/logger#readme"
+}
